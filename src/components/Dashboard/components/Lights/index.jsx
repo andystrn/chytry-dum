@@ -3,7 +3,6 @@ import './style.css';
 import Light from "./Light";
 
 const Lights = ( {lights} ) => {
-    console.log(lights);
     return (
         <div className="lights">
             {lights.lights.map((ligh) => <Light key={ligh.name} name={ligh.name} state={ligh.state} />)}

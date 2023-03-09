@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './style.css';
-import tempPic from './images/temp.svg'
+import tempPic from './images/temp.svg';
 
 const Climate = ( {temperature, humidity} ) => {
     const [temp, setTemp] = useState(temperature);
