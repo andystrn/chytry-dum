@@ -3,12 +3,13 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import smartHomeData from './smartHomeData';
 import Header from './components/Header';
-import {backGround} from './../html-vzor/images/house.jpg'
+import Dashboard from './components/Dashboard';
 
 const App = () => (
   <>
   <div className="container">
     <Header title={'Chytrá domácnost'}/>
+    <Dashboard />
   </div>
   </>
 );
