@@ -8,7 +8,7 @@ import Energy from "./components/Energy";
 const Dashboard = ( {data} ) => {
     return (
         <main className="dashboard">
-            <Lights lights={data}/>
+            <Lights lights={data.lights}/>
             <Climate temperature={data.climate.temperature} humidity={data.climate.humidity} />
             <Blinds state={data.blinds} />
             <Energy electricity={data.energyConsumption.electricity} water={data.energyConsumption.data} />

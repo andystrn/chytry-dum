@@ -8,7 +8,7 @@ const Climate = ( {temperature, humidity} ) => {
     return (
         <div className="climate">
 				<div className="climate__icon">
-					<img src={tempPic} />
+					<img src={tempPic} alt={temp}/>
 				</div>
 				<div className="climate__content">
 					<div className="climate__temperature">{temp}&deg;C</div>

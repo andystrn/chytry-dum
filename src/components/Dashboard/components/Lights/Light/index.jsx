@@ -7,9 +7,9 @@ const Light = ( {name, state} ) => {
     const [status, setStatus] = useState({state});
 
     return (
-        <div onClick={() => {setStatus(!status)}} className="light">
+        <div onClick={() => {setStatus(status === "on" ? "off" : "on")}} className="light">
 			<div className="light__icon">
-				<img src={status ? LightOn : LightOff} />
+				<img src={status === "on" ? LightOn : LightOff} alt={status}/>
 			</div>
 			<div className="light__name">
 				{name}

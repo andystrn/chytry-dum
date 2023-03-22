@@ -9,14 +9,14 @@ const Blinds = ( {state} ) => {
     return (
         <div className="blinds">
             <div className="blinds__icon">
-                <img src={status === 'open' ? blindOpen : blindClosed} />
+                <img src={status === 'open' ? blindOpen : blindClosed} alt="blind"/>
             </div>
             <div className="blinds__name">
                 Žaluzie
             </div>
             <div className="blinds__controls">
-                <button onClick={() => {setStatus('open')}} className={status === 'open' ? "button button--active" : "button"}>Otevřeno</button>
-                <button onClick={() => {setStatus('closed')}} className={status === 'closed' ? "button button--active" : "button"}>Zavřeno</button>
+                <button className={`button ${status === 'open' ? "button--active" : ""}`} onClick={() => {setStatus('open')}}>Otevřeno</button>
+                <button className={`button ${status === 'closed' ? "button--active" : ""}`} onClick={() => {setStatus('closed')}}>Zavřeno</button>
             </div>
 		</div>
     )
